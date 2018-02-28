@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  justify-content: space-around;
+  font-size: 14px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 40px;
+}
+
+nav ul li.menu-icon {
+  font-size: 20px;
+  line-height: 16px;
+  display: none;
+  margin-bottom: 10px;
+}
+
+nav ul li.menu-icon:before {
+  content: '☰';
+  display: block;
+  cursor: pointer;
+}
+
+.fb-icon {
+  color: #4468b0;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.youtube-icon {
+  color: #fc0d1c;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.phone-icon {
+  color: #fd6e2f;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  align-items: center;
+}
+
+.header img {
+  cursor: pointer;
+}
+
+main h4 {
+  color: #0d47a1;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1%;
+  margin: 0;
+}
+
+main p {
+  padding: 1%;
+}
+
+div.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.items div {
+  margin: 5px;
+  cursor: pointer;
+}
+
+div.items div:hover {
+  transform: scale(1.08);
+  transition: all 0.2s;
+}
+
+div.items div img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: #37474f;
+  color: #ffffffb3;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+
+.footer div {
+  max-width: 180px;
+  min-width: 150px;
+  flex: 1;
+}
+
+.footer h4 {
+  margin-bottom: 0;
+  color: #80cbc4;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer ul li::before {
+  content: '» ';
+}
+
+.footer ul li:hover {
+  color: #1e88e5;
+  transform: translateX(3px);
+  transition: all 0.2s;
+}
+
+.footer-note {
+  background-color: #263238;
+  color: #ffffffb3;
+  font-size: 10px;
+  padding: 1%;
+}
+.footer-note span {
+  color: red;
+}
+.footer-note a {
+  color: inherit;
+  font-style: italic;
+}
+
+@media screen and (max-width: 760px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+
+  nav ul li.menu-icon {
+    display: block;
+    line-height: 40px;
+  }
+
+  nav ul li {
+    padding-left: 10px;
+  }
+
+  nav ul li:nth-child(even) {
+    background-color: #0e0e0e;
+  }
+}
